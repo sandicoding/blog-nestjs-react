@@ -1,0 +1,11 @@
+env:
+  browser: true
+  es2021: true
+extends: eslint:recommended
+parserOptions:
+  ecmaVersion: 13
+  sourceType: module
+rules: {
+  quotes: ["error", "single"],
+  max-len: ["error", { "code": 80, "tabWidth": 4 }]
+}
